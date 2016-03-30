@@ -14,7 +14,7 @@ public class ImageBase64 {
         int quality = 100; //100: compress nothing
         bitmap.compress(Bitmap.CompressFormat.JPEG, quality, bao);
 
-        if(bitmap != null){//important! prevent out of memory
+        if(bitmap != null && !bitmap.isRecycled()){//important! prevent out of memory
             bitmap.recycle();
             bitmap = null;
         }
