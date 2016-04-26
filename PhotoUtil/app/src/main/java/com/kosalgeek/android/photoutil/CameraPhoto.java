@@ -13,6 +13,8 @@ import java.util.Date;
 
 public class CameraPhoto {
 
+    final String TAG = this.getClass().getSimpleName();
+
     private String photoPath;
 
     public String getPhotoPath() {

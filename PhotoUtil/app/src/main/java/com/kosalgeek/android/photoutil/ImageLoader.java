@@ -15,7 +15,7 @@ public class ImageLoader {
 
     private int width = 128, height = 128; //default
 
-    private ImageLoader(){
+    protected ImageLoader(){
     }
 
 

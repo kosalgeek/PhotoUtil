@@ -7,7 +7,7 @@ import android.util.Base64;
 import java.io.ByteArrayOutputStream;
 
 public class ImageBase64 {
-    final String TAG = this.getClass().getName();
+    final String TAG = this.getClass().getSimpleName();
 
     public static String encode(Bitmap bitmap){
         ByteArrayOutputStream bao = new ByteArrayOutputStream();

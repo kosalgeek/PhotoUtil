@@ -7,13 +7,9 @@ import android.os.Build;
 
 public class GalleryPhoto {
 
-    final String TAG = this.getClass().getName();
+    final String TAG = this.getClass().getSimpleName();
 
     private Context context;
-
-    public Uri getPhotoUri() {
-        return photoUri;
-    }
 
     public void setPhotoUri(Uri photoUri) {
         this.photoUri = photoUri;
@@ -29,7 +25,11 @@ public class GalleryPhoto {
         Intent intent = new Intent();
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
-        return Intent.createChooser(intent, "Select Picture");
+        return Intent.createChooser(intent, getChooserTitle());
+    }
+
+    public String getChooserTitle(){
+        return "Select Pictures";
     }
 
     public String getPath() {
