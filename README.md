@@ -1,7 +1,9 @@
 # PhotoUtil
 This is an Android library for camera, loading photos in gallery, and encoding/decoding an image to a base64.
 
-### You can watch tutorial video at https://www.youtube.com/watch?v=4LCnoVqQ6N4
+### You can watch tutorial videos: 
+#### 1. Part 1 at https://www.youtube.com/watch?v=4LCnoVqQ6N4
+#### 2. Part 2 at https://www.youtube.com/watch?v=EmOzhbGFEAk
 
 ## SETUP
 1. Download PhotoUtil.jar
@@ -109,18 +111,26 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 }
 ```
 
-## ImageLoader
+## ImageLoader (alias PhotoLoader)
 It is used to load a ``Bitmap`` or a ``Drawable`` from a file. One important method is ``requestSize(width, height)`` which is neccesary for scaling. 
 ### To Get a Bitmap
 ```java
 String photoPath = "your_photo_path";
 Bitmap bitmap = ImageLoader.init().from(photoPath).requestSize(512, 512).getBitmap();
 ```
-
+or
+```java
+String photoPath = "your_photo_path";
+Bitmap bitmap = PhotoLoader.init().from(photoPath).requestSize(512, 512).getBitmap();
+```
 ### To Get a Drawable
 ```java
 Drawable drawable = ImageLoader.init().from(photoPath).requestSize(512, 512).getImageDrawable();
 ```
+or
+```java
+Drawable drawable = PhotoLoader.init().from(photoPath).requestSize(512, 512).getImageDrawable();
+``
 
 ### ImageBase64
 It is for encoding from a ``Bitmap`` to a ``String`` or decoding from a ``String`` to a ``Bitmap``.
