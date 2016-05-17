@@ -130,7 +130,7 @@ Drawable drawable = ImageLoader.init().from(photoPath).requestSize(512, 512).get
 or
 ```java
 Drawable drawable = PhotoLoader.init().from(photoPath).requestSize(512, 512).getImageDrawable();
-``
+```
 
 ### ImageBase64
 It is for encoding from a ``Bitmap`` to a ``String`` or decoding from a ``String`` to a ``Bitmap``.
