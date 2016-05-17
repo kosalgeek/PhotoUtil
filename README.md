@@ -1,6 +1,8 @@
 # PhotoUtil
 This is an Android library for camera, loading photos in gallery, and encoding/decoding an image to a base64.
 
+### You can watch tutorial video at https://www.youtube.com/watch?v=4LCnoVqQ6N4
+
 ## SETUP
 1. Download PhotoUtil.jar
 2. Copy it and paste into your Android project at *App* > *libs* > right click on the jar file and choose *Add as Library*
