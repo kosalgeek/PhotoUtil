@@ -1,9 +1,14 @@
 # PhotoUtil
 This is an Android library for camera, loading photos in gallery, and encoding/decoding an image to a base64.
 
-### You can watch tutorial videos: 
+#### You can watch video tutorials of using PhotoUtil: 
 #### 1. Part 1 at https://www.youtube.com/watch?v=4LCnoVqQ6N4
 #### 2. Part 2 at https://www.youtube.com/watch?v=EmOzhbGFEAk
+
+#### (MUST watch) A complete PhotoUtil tutorials that combines with Volley to upload multiple images to a server at the same time:
+#### 1. https://www.youtube.com/watch?v=o1sMaD2yyXA
+#### 2. https://www.youtube.com/watch?v=7itJq7Ehu_8
+#### * a complete Volley tutorial: http://goo.gl/EfaFUs
 
 ## SETUP
 1. Download PhotoUtil.jar
